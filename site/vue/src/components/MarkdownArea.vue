@@ -319,7 +319,7 @@ function syncMarkdownToggle() {
           tabindex="0"
           @click="addMarkdown('link')"
         >
-          Link <i class="fas fa-link fa-1x" />
+          <span class="btn-markdown-label"> </span><i class="fas fa-link fa-1x" />
         </button>
         <button
           title="Insert a code segment"
@@ -328,7 +328,7 @@ function syncMarkdownToggle() {
           tabindex="0"
           @click="addMarkdown('code')"
         >
-          Code <i class="fas fa-code fa-1x" />
+          <span class="btn-markdown-label"> </span><i class="fas fa-code fa-1x" />
         </button>
         <button
           title="Insert bold text"
@@ -337,7 +337,7 @@ function syncMarkdownToggle() {
           tabindex="0"
           @click="addMarkdown('bold')"
         >
-          Bold <i class="fas fa-bold fa-1x" />
+          <span class="btn-markdown-label"> </span><i class="fas fa-bold fa-1x" />
         </button>
         <button
           title="Insert italic text"
@@ -346,7 +346,7 @@ function syncMarkdownToggle() {
           tabindex="0"
           @click="addMarkdown('italic')"
         >
-          Italics <i class="fas fa-italic fa-1x" />
+          <span class="btn-markdown-label"> </span><i class="fas fa-italic fa-1x" />
         </button>
         <button
           title="Insert blockquote text"
@@ -355,7 +355,7 @@ function syncMarkdownToggle() {
           tabindex="0"
           @click="addMarkdown('blockquote')"
         >
-          Blockquote <i class="fas fa-quote-left fa-1x" />
+           <i class="fas fa-quote-left fa-1x" />
         </button>
       </div>
     </div>

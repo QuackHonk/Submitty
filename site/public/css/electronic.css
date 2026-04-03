@@ -1567,6 +1567,19 @@ input[type="radio"][disabled=""]:checked::before {
     }
 }
 
+/* TA grading rubric panel: markdown area overrides */
+/* stylelint-disable-next-line selector-id-pattern, selector-class-pattern */
+#grading_rubric .markdown-mode-buttons {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+/* stylelint-disable-next-line selector-id-pattern, selector-class-pattern */
+#grading_rubric .markdown-area-toolbar {
+    flex-wrap: nowrap;
+}
+
+
 /* Animations */
 /* stylelint-disable-next-line keyframes-name-pattern */
 @keyframes scaleUp {
