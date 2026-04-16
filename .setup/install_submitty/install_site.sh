@@ -125,6 +125,11 @@ if [ -d "${SUBMITTY_INSTALL_DIR}/site/vue" ]; then
     rm -r "${SUBMITTY_INSTALL_DIR}/site/vue"
 fi
 
+# Delete all public/js code so vue-tsc's include glob don't read deleted JS files (which causes a compilation error)
+if [ -d "${SUBMITTY_INSTALL_DIR}/site/public/js" ]; then
+    rm -r "${SUBMITTY_INSTALL_DIR}/site/public/js"
+fi
+
 # copy the website from the repo. We don't need the tests directory in production and then
 # we don't want vendor as if it exists, it was generated locally for testing purposes, so
 # we don't want it
